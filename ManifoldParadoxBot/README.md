@@ -2,16 +2,8 @@
 
 # Development
 
-1. Duplicate `launchSettings.example.json` and rename it to `launchSettings.json`
-2. In the new file (`launchSettings.json`), fill in the `commandLineArgs` field with the respective discord's bot token. It should look something like this:
-```
-{
-  "profiles": {
-    "ManifoldParadoxDiscordBot": {
-      "commandName": "Project",
-      "commandLineArgs": "REPLACE_THIS_WITH_YOUR_ACTUAL_DISCORD_TOKEN"
-    }
-  }
-}
-```
-3. Build and exec the application.
+1. Clone this repository.
+2. Set the `GOOGLE_APPLICATIONS_CREDENTIALS` environment variable. The value mst be the filepath to your firebase private key file ("path/to/serviceAccountKey.json").
+3. Set the discord bot token as the first program argument if you want to run it from your IDE.
+4. Compile and build.
+5. Start the program passing the discord bot token as the first argument. Example from windows cli: `ManifoldParadoxBot.exe YOUR_DISCORD_BOT_TOKEN_LONG_STRING`

@@ -77,8 +77,6 @@ namespace ManifoldParadoxBot
 
         private FirestoreDb InitializeFirebaseFirestore()
         {
-            string filePath = "manifold-paradox-discord-bot-firebase-adminsdk-ifcqg-513e86b9b2.json";
-            Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", filePath);
             return FirestoreDb.Create("manifold-paradox-discord-bot");
         }
 
